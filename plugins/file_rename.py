@@ -170,7 +170,7 @@ async def doc(bot, update):
         suffix = await digital_botz.get_suffix(user_id)
         new_filename = add_prefix_suffix(new_filename_, prefix, suffix)
     except Exception as e:
-        return await rkn_processing.edit(f"⚠️ Something went wrong can't able to set Prefix or Suffix ☹️ \n\n❄️ Contact My Creator -> @RknDeveloperr\nError: {e}")
+        return await rkn_processing.edit(f"⚠️ Something went wrong can't able to set Prefix or Suffix ☹️ \n\n❄️ Contact My Creator -> @AYU_BOTS\nError: {e}")
 
     # msg file location 
     file = update.message.reply_to_message
@@ -190,7 +190,7 @@ async def doc(bot, update):
         await digital_botz.set_used_limit(user_id, total_used)
 	
     try:
-        dl_path = await bot.download_media(message=file, file_name=file_path, progress=progress_for_pyrogram, progress_args=(DOWNLOAD_TEXT, rkn_processing, time.time()))                    
+        dl_path = await bot.download_media(message=file, file_name=file_path, progress=progress_for_pyrogram, progress_args=(DOWNLOAD_TEXT, Ayu_processing, time.time()))                    
     except Exception as e:
         if bot.premium and bot.uploadlimit:
             used_remove = int(used) - int(media.file_size)
