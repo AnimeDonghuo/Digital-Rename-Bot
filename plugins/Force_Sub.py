@@ -17,9 +17,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-Telegram Link : https://t.me/Digital_Botz 
-Repo Link : https://github.com/DigitalBotz/Digital-Rename-Bot
-License Link : https://github.com/DigitalBotz/Digital-Rename-Bot/blob/main/LICENSE
+Telegram Link : https://t.me/Ayu 
+Repo Link : https://github.com/Ayu-Rename-Bot
+License Link : https://github.com/AyuRename-Bot/blob/main/LICENSE
 """
 
 # pyrogram imports
@@ -55,7 +55,7 @@ async def handle_banned_user_status(bot, message):
         ).days > ban_status["ban_duration"]:
             await digital_botz.remove_ban(user_id)
         else:
-            return await message.reply_text("Sorry Sir, 😔 You are Banned!.. Please Contact - @DigitalBotz") 
+            return await message.reply_text("Sorry Sir, 😔 You are Banned!.. Please Contact - @AYU_BOTS") 
     await message.continue_propagation()
     
 @Client.on_message(filters.private)
