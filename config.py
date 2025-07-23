@@ -59,7 +59,7 @@ class Config(object):
     
     #force subs
     try:
-        FORCE_SUB = int(os.environ.get("FORCE_SUB", "-1002527322390")) 
+        FORCE_SUB = int(os.environ.get("FORCE_SUB", "")) 
     except:
         FORCE_SUB = os.environ.get("FORCE_SUB", "Movies_Hindi_Plus")
         
