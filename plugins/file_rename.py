@@ -190,7 +190,7 @@ async def doc(bot, update):
         await digital_botz.set_used_limit(user_id, total_used)
 	
     try:
-        dl_path = await bot.download_media(message=file, file_name=file_path, progress=progress_for_pyrogram, progress_args=(DOWNLOAD_TEXT, Ayu_processing, time.time()))                    
+        dl_path = await bot.download_media(message=file, file_name=file_path, progress=progress_for_pyrogram, progress_args=(DOWNLOAD_TEXT, rkn_processing, time.time()))                    
     except Exception as e:
         if bot.premium and bot.uploadlimit:
             used_remove = int(used) - int(media.file_size)
